@@ -1,0 +1,1 @@
+export function MenuProvider({ children }: { children: React.ReactNode }) {}

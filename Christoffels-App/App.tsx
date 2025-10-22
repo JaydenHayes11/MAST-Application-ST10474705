@@ -30,21 +30,21 @@ function MainTabs() {
         name="Home"
         component={HomePage}
         options={{
-          tabBarIcon:({focused}) => <Text>{focused ? '':'' }</Text>,
+          tabBarIcon:({focused}) => <Text>{focused ? '🏠':'🏠' }</Text>,
         }}
       />
       <Tab.Screen
         name="Menu"
         component={MenuPage}
         options={{
-          tabBarIcon:({focused}) => <Text>{focused ? '':'' }</Text>,
+          tabBarIcon:({focused}) => <Text>{focused ? '📕':'📖'}</Text>,
         }}
       />
       <Tab.Screen
         name="Manage"
         component={MenuManagePage}
         options={{
-          tabBarIcon:({focused}) => <Text>{focused ? '':'' }</Text>,
+          tabBarIcon:({focused}) => <Text>{focused ? '➕':'✚' }</Text>,
         }}
       />
     </Tab.Navigator>
@@ -52,7 +52,9 @@ function MainTabs() {
 }
 
 export default function App() {
+
   return (
+
     <MenuProvider>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
